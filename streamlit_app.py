@@ -1,5 +1,6 @@
 import streamlit 
 import pandas as pd
+fruit_list = pd.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 
 streamlit.title('My parents new heathly diner')
 
@@ -17,7 +18,7 @@ streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 streamlit.multiselect("Pick some fruits:", list(fruit_list.index))
 
 # Display the table on the page.
-fruit_list = pd.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+
 streamlit.dataframe(fruit_list)
 
 
