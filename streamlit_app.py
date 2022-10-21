@@ -32,7 +32,7 @@ streamlit.text(fruityvice_response.json())
 
 # recupere les données en format Json depuis le API renseigné les normalise  et les affiche en dataframe  
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-
+# write your own comment - what does this do?
 streamlit.dataframe(fruityvice_normalized)
 
 
